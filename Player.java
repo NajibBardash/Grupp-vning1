@@ -23,6 +23,6 @@ public class Player {
 
     @Override
     public String toString() {
-        return String.format("Namn: %s%nHighscore: %d%nPlayed rounds: %s", name, highScore, numberOfGames);
+        return String.format("Name: %s%nHighscore: %d%nPlayed rounds: %s", name, highScore, numberOfGames);
     }
 }
