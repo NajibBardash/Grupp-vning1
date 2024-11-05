@@ -3,10 +3,8 @@ public class Player {
     private int highScore;
     private int numberOfGames;
 
-    public Player(String name, int highScore, int numberOfGames) {
+    public Player(String name) {
         this.name = name;
-        this.highScore = highScore;
-        this.numberOfGames = numberOfGames;
     }
 
     public String getName() {
