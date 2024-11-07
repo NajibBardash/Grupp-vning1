@@ -1,10 +1,12 @@
 public class Player {
     private String name;
     private int highScore;
-    private int numberOfGames;
+    private int roundsPlayed;
 
     public Player(String name) {
         this.name = name;
+        this.highScore = 0;
+        this.roundsPlayed = 0;
     }
 
     public String getName() {
@@ -15,12 +17,20 @@ public class Player {
         return highScore;
     }
 
-    public int getNumberOfGames() {
-        return numberOfGames;
+    public int getroundsPlayed() {
+        return roundsPlayed;
+    }
+
+    public void countRounds() {
+        roundsPlayed++;
+    }
+
+    public void newHighScore() {
+        highScore++;
     }
 
     @Override
     public String toString() {
-        return String.format("Name: %s%nHighscore: %d%nPlayed rounds: %s", name, highScore, numberOfGames);
+        return String.format("Name: %s%nHighscore: %d%nPlayed rounds: %s", name, highScore, roundsPlayed);
     }
 }
